@@ -11,14 +11,14 @@ class ButtonListTile extends StatelessWidget {
   final VoidCallback onTap;
 
   const ButtonListTile({
-    super.key,
+    Key? key,
     required this.title,
     required this.bgIconColor,
     required this.icon,
     this.hasTrailing = false,
     this.trailing,
     required this.onTap,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -41,12 +41,20 @@ class ButtonListTile extends StatelessWidget {
         title,
         style: subTitleStyle,
       ),
-      trailing: hasTrailing
-          ? Text(
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (hasTrailing && trailing != null)
+            Text(
               trailing!,
               style: subTitleStyle.copyWith(color: grey),
-            )
-          : const SizedBox(),
+            ),
+          const Opacity(
+            opacity: 0.3,
+            child: Icon(Icons.arrow_forward_ios, color: grey, size: 15),
+          ),
+        ],
+      ),
     );
   }
 }

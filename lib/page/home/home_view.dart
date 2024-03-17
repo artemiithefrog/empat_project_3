@@ -61,15 +61,26 @@ class HomePage extends StatelessWidget {
           const SizedBox(
             height: defaultPadding,
           ),
-          Column(
-            children: List.generate(myWorks.length, (index) {
-              return ButtonListTile(
-                onTap: () {},
-                title: myWorks[index]['title'],
-                icon: Icons.more_horiz,
-                bgIconColor: myWorks[index]['bgIconColor'],
-              );
-            }),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: defaultPadding), // Adjust padding as needed
+            child: Container(
+              decoration: BoxDecoration(
+                color: rectangleColor,
+                borderRadius: BorderRadius.circular(
+                    10.0), // Adjust the corner radius as needed
+              ),
+              child: Column(
+                children: List.generate(myWorks.length, (index) {
+                  return ButtonListTile(
+                    onTap: () {},
+                    title: myWorks[index]['title'],
+                    icon: Icons.more_horiz,
+                    bgIconColor: myWorks[index]['bgIconColor'],
+                  );
+                }),
+              ),
+            ),
           ),
           const SizedBox(
             height: defaultPadding / 2,
