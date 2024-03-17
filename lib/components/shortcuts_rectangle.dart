@@ -38,7 +38,7 @@ class ShortcutsRectangle extends StatelessWidget {
                               (size.width / 2.3),
                           right: 0,
                           child: CircleIcon(
-                              icon: Icons.more_horiz,
+                              icon: shortcuts[index]['icon'],
                               bgColor: shortcuts[index]['bgColor']),
                         );
                       }),

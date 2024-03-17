@@ -1,70 +1,75 @@
 import 'package:flutter/material.dart';
 import 'package:empat_project_3/colors/colors.dart';
 
-const List myWorks = [
+const List<Map<String, dynamic>> myWorks = [
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.circle,
     "bgIconColor": green,
     "title": "Issues",
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.build,
     "bgIconColor": blue,
     "title": "Pull Requests",
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.message,
     "bgIconColor": purple,
     "title": "Discussions",
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.photo,
+    "bgIconColor": grey,
+    "title": "Projects",
+  },
+  {
+    "icon": Icons.book,
     "bgIconColor": bgDark,
     "title": "Repositories",
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.home,
     "bgIconColor": orange,
     "title": "Organizations",
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.star,
     "bgIconColor": yellow,
     "title": "Starred",
   },
 ];
 
-const List shortcuts = [
+const List<Map<String, dynamic>> shortcuts = [
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.bolt,
     "bgColor": bgDark,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.circle,
     "bgColor": green,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.build,
     "bgColor": blue,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.message,
     "bgColor": purple,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.home,
     "bgColor": orange,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.people,
     "bgColor": red,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.cases,
     "bgColor": purple,
   },
   {
-    "icon": Icon(Icons.abc),
+    "icon": Icons.book,
     "bgColor": bgDark,
   },
 ];

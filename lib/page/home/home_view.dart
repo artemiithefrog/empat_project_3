@@ -75,7 +75,7 @@ class HomePage extends StatelessWidget {
                   return ButtonListTile(
                     onTap: () {},
                     title: myWorks[index]['title'],
-                    icon: Icons.more_horiz,
+                    icon: myWorks[index]['icon'],
                     bgIconColor: myWorks[index]['bgIconColor'],
                   );
                 }),
